@@ -18,6 +18,14 @@ const Form = () => {
         e.preventDefault();
         const updatedData = [...savedData, formData];
 
+        const data = {name: formData.name, email: formData.email};
+        const blob = new Blob([JSON.stringify(data)], {type: "application/json"});
+
+        const link = document.createElement("a")
+        link.href = URL.createObjectURL(blob)
+        link.download = "daata.json"
+        link.click()
+
         // Save to localStorage
         localStorage.setItem("userData", JSON.stringify(updatedData));
         setSavedData(updatedData);

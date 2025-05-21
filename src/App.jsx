@@ -30,8 +30,8 @@ const App = () => {
         {/*  Nested component program */}
         {/* <NestedComponent/> */}
 
-        {/* user Form program*/}
-        {/* <Form/> */}
+        {/* user Form program */}
+        <Form/>
 
         {/* conditional Rendering  */}
         {/* <Rendering number={0}/> */}
@@ -42,11 +42,11 @@ const App = () => {
 
 
         {/* npm install react-slick slick-carousel */}
-        {/* Image slider */}
+        {/* Image slider
         <div>
             <h2>Dynamic Image Slider</h2>
             <SliderComponent images={images} autoplay={true} speed={1500} slidesToShow={2} />
-        </div>
+        </div> */}
     </>
   )
 }
