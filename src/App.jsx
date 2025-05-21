@@ -40,6 +40,9 @@ const App = () => {
         {/* Dynamic list */}
         {/* <DynamicList/> */}
 
+
+        {/* npm install react-slick slick-carousel */}
+        {/* Image slider */}
         <div>
             <h2>Dynamic Image Slider</h2>
             <SliderComponent images={images} autoplay={true} speed={1500} slidesToShow={2} />
